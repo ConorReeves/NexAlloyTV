@@ -211,6 +211,14 @@ The [FingerprintCompat.kt](app/src/main/java/io/github/nexalloy/morphe/Fingerpri
     ```
     This allows leveraging DexKit for initial efficient filtering, then applying precise Kotlin logic to the narrowed-down candidates.
 
+### YouTube TV
+
+YouTube for Android TV (`com.google.android.youtube.tv`) 7.x runs the YouTube web app in a Chromium shell, so it isn't patched with fingerprints. [YouTubeTVPatches.kt](app/src/main/java/io/github/nexalloy/youtubetv/YouTubeTVPatches.kt) hooks Chromium's `WebContentsObserverProxy` and injects [nexalloy-tv.js](app/src/main/resources/nexalloy-tv/nexalloy-tv.js) into the page through the `evaluateJavaScript` JNI entry point. It only uses names that survive R8: Chromium classes called from native code by name, and the jni_zero `GEN_JNI` bridge.
+
+The features themselves are JavaScript in [tv-script/](tv-script/README.md). Change the source there, run `npm test` and `npm run build`, and commit the rebuilt `nexalloy-tv.js` with the source. Gradle builds use the committed file and don't need Node.
+
+To inspect the TV app, enable the **Remote debugging** patch and follow the steps in [tv-script/README.md](tv-script/README.md#inspecting-the-tv-app).
+
 ### Extension Modules
 
 As per ReVanced Patcher documentation:

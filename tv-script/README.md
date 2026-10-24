@@ -1,6 +1,6 @@
 # NexAlloy for YouTube TV
 
-YouTube for Android TV (`com.google.android.youtube.tv`) 7.x is "Chrobalt": a
+YouTube for Android TV and Google TV (`com.google.android.youtube.tv`) 7.x is "Chrobalt": a
 Chromium 138 shell that runs the web app at `https://www.youtube.com/tv`. Its
 UI, player and ads are JavaScript, so Morphe's phone patches (which hook the
 phone app's compiled code) have nothing to attach to. Instead, the

@@ -6,7 +6,7 @@ body:
   attributes:
     value: |
       **PLEASE READ BEFORE SUBMITTING**
-      This project is an Xposed port of Morphe ([morphe.software](https://morphe.software/)). Features that do not exist in the official project will not be accepted. Some apps are not patchable on their latest versions due to technical limitations.
+      NexAlloy TV brings Morphe ([morphe.software](https://morphe.software/)) features to YouTube on Google TV and Android TV. Requests for TV versions of Morphe features are welcome; features for phone apps belong in upstream [NexAlloy](https://github.com/NexAlloy/NexAlloy).
 - type: textarea
   attributes:
     label: Describe the feature you'd like

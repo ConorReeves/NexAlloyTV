@@ -7,22 +7,20 @@ body:
       value: |
         Before creating a new bug report, please keep the following in mind:
 
-        - **Do not submit a duplicate bug report**: Search for existing bug reports [here](https://github.com/NexAlloy/NexAlloy/issues?q=%5BBug%5D).
-        - **Check the troubleshooting guide**: A solution to your issue might be found in the [FAQ](https://github.com/NexAlloy/NexAlloy/wiki/Frequently-Asked-Questions).
+        - **Do not submit a duplicate bug report**: Search for existing bug reports [here](https://github.com/ConorReeves/NexAlloyTV/issues?q=%5BBug%5D).
+        - **This is NexAlloy TV**: Only report bugs here if you're using this fork. Report upstream NexAlloy bugs [on its tracker](https://github.com/NexAlloy/NexAlloy/issues).
   - type: checkboxes
     attributes:
       label: Acknowledgements
       options:
         - label: I have checked all open and closed bug reports and this is not a duplicate.
           required: true
-        - label: I have read the FAQ.
-          required: true
   - type: input
     attributes:
       label: Environment
       description: |
-        OS version, Android version, Root manager (Magisk/KSU/APatch), LSPosed version.  
-        Example: LineageOS 21, Android 14, Magisk 29.0, JingMatrix/LSPosed-v1.10.2-7182.
+        TV model, Android TV / Google TV version, Root manager (Magisk/KSU/APatch), LSPosed version.  
+        Example: Chromecast with Google TV (4K), Android TV 14, Magisk 29.0, JingMatrix/LSPosed-v1.10.2-7182.
     validations:
       required: true
   - type: textarea
@@ -39,7 +37,7 @@ body:
     attributes:
       label: Error logs
       description: |
-        - If You are reporting a YouTube bug, enable Debug Logging in YouTube Settings -> ReVanced Settings -> Miscellaneous -> Debugging.
+        - If you are reporting a YouTube TV bug and can connect over adb, a DevTools console log helps too (see "Inspecting the TV app" in tv-script/README.md).
         - Reproduce the bug
         - Open LSPosed Manager -> Logs
         - Save logs

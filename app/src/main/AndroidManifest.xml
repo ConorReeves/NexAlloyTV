@@ -8,6 +8,7 @@
 
     <queries>
         <package android:name="com.google.android.youtube" />
+        <package android:name="com.google.android.youtube.tv" />
         <package android:name="com.google.android.apps.youtube.music" />
         <package android:name="com.reddit.frontpage" />
         <package android:name="com.google.android.apps.photos" />
