@@ -8,11 +8,13 @@ import io.github.nexalloy.revanced.googlephotos.GooglePhotosPatches
 import io.github.nexalloy.revanced.meta.MetaPatches
 import io.github.nexalloy.revanced.photomath.PhotomathPatches
 import io.github.nexalloy.revanced.strava.StravaPatches
+import io.github.nexalloy.youtubetv.YouTubeTVPatches
 
 class AppPatchInfo(val appName: String, val packageName: String, val patches: Array<Patch>)
 
 val appPatchConfigurations = listOf(
     AppPatchInfo("YouTube", "com.google.android.youtube", YouTubePatches),
+    AppPatchInfo("YouTube TV", "com.google.android.youtube.tv", YouTubeTVPatches),
     AppPatchInfo("YT Music", "com.google.android.apps.youtube.music", YTMusicPatches),
     AppPatchInfo("Reddit", "com.reddit.frontpage", RedditPatches),
     AppPatchInfo("Google Photos", "com.google.android.apps.photos", GooglePhotosPatches),

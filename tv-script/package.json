@@ -1,0 +1,14 @@
+{
+  "name": "nexalloy-tv-script",
+  "private": true,
+  "description": "NexAlloy's injected script for the YouTube TV (Chrobalt) web app",
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10"
+  }
+}
